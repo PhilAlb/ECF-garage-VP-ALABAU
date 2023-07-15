@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+}
+
+body {
+  color: #4c4c4c;
+  font-size: 1rem;
+}
+
+#nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  background: #ffffff;
+  padding: 0;
+  border-bottom: 1rem solid;
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.navbar-nav li {
+  padding: 0 10px;
+}
+
+.navbar-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  float: right;
+  text-align: left;
+}
+
+.fa-bars {
+  color: #333;
+  font-size: 20px;
+}
+
+.navbar-toggler {
+  outline: none;
+}
+
+/*-----------banner section-------------*/
+
+#banner {
+  padding-top: 5%;
+}
+
+.baseline-title {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #333;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.emphasis {
+  color: #bd4549;
+}
+
+/*-----------services section------------*/
+
+#services {
+  padding: 80px 0;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.title::before {
+  content: '';
+  background: #d45e45;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+
+.service-card {
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.service-card-body {
+  padding: 20px;
+  height: 200px;
+}
+
+.service-card-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.service-card-textt {
+  color: #555;
+}
+
+#services .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d45e45;
+}
+
+#services .btn-primary:hover {
+  background-color: #bc5845;
+}
+
+
+/*-------------annonces---------------*/
+
+.adcar {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.adcar:hover {
+  transform: scale(1.05);
+}
+
+.adcar-img {
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.adcar-body {
+  padding: 15px;
+}
+
+.adcar-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.adcar-text {
+  margin-bottom: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+.adcar-button.btn-primary {
+  background-color: #fca311;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.adcar-button.btn-primary:hover {
+  background-color: #ff9300;
+  color: #fff;
+}
+
+.book-btn.btn-primary {
+  background-color: #d45e45;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.book-btn.btn-primary:hover {
+  background-color: #bc5845;
+  color: #fff;
+}
+
+/*-------------testimonials----------*/
+
+#testimonials {
+  margin: 100px 0;
+}
+
+.testimonials .testimonial {
+  margin-top: 50px;
+  margin-bottom: 250px;
+}
+
+.rating,
+.rating-passed {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.rating>input,
+.rating-passed>input {
+  display: none;
+}
+
+.rating>label:before {
+  content: '\2605';
+  font-size: 2em;
+  color: #808080;
+}
+
+.rating>input:checked~label:before {
+  color: #FFD700;
+}
+
+.testimonials {
+  border-left: 4px solid #d45e45;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.user-name {
+  display: inline-block;
+  font-size: 18px;
+}
+
+.rating-passed>label:before {
+  content: '\2605';
+  font-size: 2em;
+  color: #FFD700;
+}
+
+.form-label {
+  font-size: 20px;
+}
+
+#testimonials .btn-primary,
+#contact .btn-primary {
+  box-shadow: none;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #d45e45;
+}
+
+#testimonials .btn-primary:hover,
+#contact .btn-primary:hover {
+  background-color: #bc5845;
+}
+
+/*------------footer section----------*/
+
+#footer {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+.footer-box {
+  padding: 20px;
+  list-style: none;
+}
+
+.footer-title {
+  font-weight: bold;
+}
+
+.nav-item-footer {
+  list-style: none;
+}
+
+.nav-link-footer {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+.copyright {
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
