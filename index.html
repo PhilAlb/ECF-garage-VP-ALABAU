@@ -105,7 +105,7 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-primary btn-lg mt-5" onclick="scrollToForm()">Réserver</button>
+      <button type="button" class="btn btn-primary btn-lg mt-5">Réserver</button>
     </div>
   </section>
   
@@ -124,8 +124,8 @@
               <p class="card-text adcar-text">Prix : 15 000 €</p>
               <p class="card-text adcar-text">Année : 2010</p>
               <p class="card-text adcar-text">Kilométrage : 141 000 km</p>
-              <button href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</button>
-              <button href="#" class="btn btn-primary book-btn mt-2">Réserver</button>
+              <a href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</a>
+              <a href="#" class="btn btn-primary adcar-button mt-2 book-btn">Réserver</a>
             </div>
           </div>
         </div>
@@ -137,8 +137,8 @@
               <p class="card-text adcar-text">Prix : 8 990 €</p>
               <p class="card-text adcar-text">Année : 2012</p>
               <p class="card-text adcar-text">Kilométrage : 96 000 km</p>
-              <button href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</button>
-              <button href="#" class="btn btn-primary book-btn mt-2">Réserver</button>
+              <a href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</a>
+              <a href="#" class="btn btn-primary adcar-button mt-2 book-btn">Réserver</a>
             </div>
           </div>
         </div>
@@ -150,8 +150,8 @@
               <p class="card-text adcar-text">Prix : 4 700 €</p>
               <p class="card-text adcar-text">Année : 2009</p>
               <p class="card-text adcar-text">Kilométrage : 182 800 km</p>
-              <button href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</button>
-              <button href="#" class="btn btn-primary book-btn mt-2">Réserver</button>
+              <a href="#" class="btn btn-primary adcar-button mt-2">En savoir plus</a>
+              <a href="#" class="btn btn-primary adcar-button mt-2 book-btn">Réserver</a>
             </div>
           </div>
         </div>
@@ -167,15 +167,13 @@
       <h1 class="title text-center contact-title">NOUS CONTACTER</h1>
       <div class="row">
         <div class="mt-5 col-md-8 contact">
-          <form id="form-contact" action="#" method="POST">
-            <label class="form-label">Motif</label>
-            <select class="form-select mb-3" aria-label="subject">
-              <option selected>Choissisez un motif</option>
-              <option value="1">Prise de rendez-vous</option>
-              <option value="2">Annonce de voiture</option>
-              <option value="3">Demande d'informations</option>
-            </select>
-          </form>
+          <label class="form-label">Motif</label>
+          <select class="form-select mb-3" aria-label="subject">
+            <option selected>Choissisez un motif</option>
+            <option value="1">Prise de rendez-vous</option>
+            <option value="2">Annonce de voiture</option>
+            <option value="3">Demande d'informations</option>
+          </select>
           <div class="mb-3 col-md-5 d-md-inline-block">
             <label for="name-contact" class="form-label">Nom</label>
             <input type="name" class="form-control" id="name-contact" placeholder="Votre nom">
@@ -189,13 +187,13 @@
             <input type="email" class="form-control" id="email-contact" placeholder="Votre email">
           </div>
           <div class="mb-3 col-md-5 d-md-inline-block">
-            <label for="phone" class="form-label">Téléphone</label>
+            <label for="phone" class="form-label">Numéro de téléphone</label>
             <input type="phone" class="form-control" id="phone" placeholder="Votre numéro de téléphone">
           </div>
           <div class="mb-3">
             <label for="testimonial-message" class="form-label">Message</label>
             <textarea class="form-control" id="contact-message" rows="3"></textarea>
-            <button type="submit" class="btn btn-primary btn-send">Envoyer</button>
+            <button type="button" class="btn btn-primary btn-send">Envoyer</button>
           </div>
         </div>
       </div>
@@ -210,27 +208,26 @@
       <div class="row">
         <div class="mt-5 col-md-8 testimonial">
           <div class="mb-3 col-md-5 d-inline-block">
-            <form id="form-testimonials" action="#" method="POST">
-              <label for="name" class="form-label">Nom</label>
-              <input type="name" class="form-control" id="name" placeholder="Votre nom">
-            <div class="rating m-4 col-md-4 d-inline-block">
-              <input type="radio" id="star5" name="rating" value="5">
-              <label for="star5"></label>
-              <input type="radio" id="star4" name="rating" value="4">
-              <label for="star4"></label>
-              <input type="radio" id="star3" name="rating" value="3">
-              <label for="star3"></label>
-              <input type="radio" id="star2" name="rating" value="2">
-              <label for="star2"></label>
-              <input type="radio" id="star1" name="rating" value="1">
-              <label for="star1"></label>
-            </div>
-            <div class="mb-3 justify-content-center">
-              <label for="testimonial-message" class="form-label">Message</label>
-              <textarea class="form-control" id="testimonial-message" rows="3"></textarea>
-              <button type="submit" class="btn btn-primary btn-send">Envoyer</button>
-            </div>
-            </form>
+            <label for="name" class="form-label">Nom</label>
+            <input type="name" class="form-control" id="name" placeholder="Votre nom">
+          </div>
+          <div class="rating m-4 col-md-4 d-inline-block">
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1"></label>
+          </div>
+          <div class="mb-3 justify-content-center">
+            <label for="testimonial-message" class="form-label">Votre témoignage</label>
+            <textarea class="form-control" id="testimonial-message" rows="3"></textarea>
+            <button type="button" class="btn btn-primary btn-send">Envoyer</button>
+          </div>
         </div>
         <div class="row">
           <div class="col-md-4 testimonials">
@@ -326,6 +323,5 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="/js/script.js"></script>
 
 </html>
