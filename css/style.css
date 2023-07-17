@@ -134,7 +134,6 @@ body {
   background-color: #bc5845;
 }
 
-
 /*-------------annonces---------------*/
 
 .adcar {
@@ -170,26 +169,26 @@ body {
   font-size: 14px;
 }
 
-.adcar-button.btn-primary {
+#adcars .adcar-button.btn-primary {
   background-color: #fca311;
   border: none;
   color: #fff;
   transition: background-color 0.3s;
 }
 
-.adcar-button.btn-primary:hover {
+#adcars .adcar-button.btn-primary:hover {
   background-color: #ff9300;
   color: #fff;
 }
 
-.book-btn.btn-primary {
+#adcars .book-btn.btn-primary {
   background-color: #d45e45;
   border: none;
   color: #fff;
   transition: background-color 0.3s;
 }
 
-.book-btn.btn-primary:hover {
+#adcars .book-btn.btn-primary:hover {
   background-color: #bc5845;
   color: #fff;
 }
@@ -294,3 +293,7 @@ body {
   padding-bottom: 20px;
   text-align: center;
 }
+
+
+/*---------------page de login---------------*/
+
